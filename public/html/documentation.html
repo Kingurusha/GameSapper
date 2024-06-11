@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/documentation.css">
+</head>
+<body>
+    <header>
+        <h1>Documentation</h1>
+    </header>
+    <main>
+        <section id="project-goal">
+            <h2>Project Goal</h2>
+            <p>The goal of this project is to create a classic version of the Minesweeper game where the player explores the game field and tries to uncover hidden mines. In addition to the classic Minesweeper mode, a new mode called custom field is added, where the player has the option to select the difficulty, customize the size of the game field, and other parameters. This mode brings new challenges and fun to the players, expanding their Minesweeper gaming experience.</p>
+        </section>
+
+        <section id="process">
+            <h2>Process</h2>
+            <p>The development process involves creating the game logic using JavaScript, designing the game layout with HTML and CSS, and implementing features such as custom game settings, saving game state using Local Storage, and responsive design to ensure the game works on various devices. The project is developed using Visual Studio and tested on modern browsers including Chrome, Firefox, Edge, and Opera.</p>
+        </section>
+
+        <section id="functionality-description">
+            <h2>Functionality Description</h2>
+            <p>The game includes the following functionalities:</p>
+            <ul>
+                <li>Classic Minesweeper game mode with a predefined field size and difficulty.</li>
+                <li>Custom game mode where players can choose the field size and difficulty level.</li>
+                <li>Game state saving using Local Storage, allowing players to resume their game after a page reload.</li>
+                <li>Responsive design to ensure the game is playable on both desktop and mobile devices.</li>
+                <li>Interactive UI elements, including buttons to start a new game, and settings for custom games.</li>
+            </ul>
+        </section>
+
+        <section id="game-rules">
+            <h2>Game Rules</h2>
+            <p>Minesweeper is a single-player puzzle game. The objective is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with the help of clues about the number of neighboring mines in each field.</p>
+            <p>Rules:</p>
+            <ul>
+                <li>The game board consists of a grid of cells, each of which can be either a mine or a number indicating the count of mines in the adjacent cells.</li>
+                <li>The player can click on a cell to reveal it. If the cell contains a mine, the player loses the game.</li>
+                <li>If the cell contains a number, it indicates how many mines are adjacent to that cell. The player can use this information to deduce which nearby cells are safe to click.</li>
+                <li>The player can right-click on a cell to place a flag, indicating that they believe there is a mine in that cell. Right-clicking again will remove the flag.</li>
+                <li>The game is won when all non-mine cells are revealed and all mines are flagged correctly.</li>
+            </ul>
+            <p>Features:</p>
+            <ul>
+                <li>The first click is always safe and never contains a mine.</li>
+                <li>The player can start a new game at any time by clicking the "New Game" button.</li>
+                <li>The custom game mode allows players to adjust the field size and difficulty level before starting the game.</li>
+                <li>Game progress is automatically saved using Local Storage, so the player can resume the game even after closing the browser or reloading the page.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

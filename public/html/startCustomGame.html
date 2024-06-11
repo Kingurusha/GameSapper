@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Custom Game</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/custom-game.css">
+</head>
+<body>
+    <header>
+        <h1>Start Custom Game</h1>
+    </header>
+    <main>
+        <section class="settings">
+            <form id="customGameForm">
+                <div>
+                    <label for="fieldSize">Field Size:</label>
+                    <input type="range" id="fieldSize" name="fieldSize" min="5" max="30" value="15" oninput="updateFieldSizeLabel(this.value)" required>
+                    <span id="fieldSizeLabel">15</span>
+                </div>
+                <div>
+                    <label for="difficulty">Difficulty:</label>
+                    <div class="difficulty-buttons">
+                        <button type="button" id="easyButton" onclick="setDifficulty('easy')">Easy</button>
+                        <button type="button" id="mediumButton" onclick="setDifficulty('medium')">Medium</button>
+                        <button type="button" id="hardButton" onclick="setDifficulty('hard')">Hard</button>
+                    </div>
+                </div>
+                <div>
+                    <label for="playerName">Player Name:</label>
+                    <input type="text" id="playerName" name="playerName" placeholder="Enter your name" required>
+                </div>
+                <button type="submit" id="newGameButton">New Game</button>
+                <button type="button" id="czechModeButton">Czech Republic Mode</button>
+            </form>
+        </section>
+        <section id="gameContainer">
+            <div id="game"></div>
+        </section>
+        <audio id="gameMusic" src="../song/main.mp3" loop></audio>
+    </main>
+    <script src="../js/game.js"></script>
+    <script src="../js/customGame.js"></script>
+    <script src="../js/audio.js"></script>
+    <script src="../js/sw-register.js"></script>
+    <script src="../js/network-status.js"></script>
+</body>
+</html>

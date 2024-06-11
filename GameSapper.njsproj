@@ -29,9 +29,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="public\css\custom-game.css" />
+    <Content Include="public\css\documentation.css" />
+    <Content Include="public\css\game.css" />
+    <Content Include="public\html\documentation.html" />
+    <Content Include="public\html\startCustomGame.html" />
+    <Content Include="public\html\startGame.html" />
+    <Content Include="public\js\audio.js" />
+    <Content Include="public\js\customGame.js" />
+    <Content Include="public\js\explosion.js" />
+    <Content Include="public\js\network-status.js" />
+    <Content Include="public\js\service-worker.js" />
+    <Content Include="public\js\sw-register.js" />
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\html\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
